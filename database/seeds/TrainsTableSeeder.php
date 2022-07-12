@@ -16,7 +16,7 @@ class TrainsTableSeeder extends Seeder
         for($i = 0; $i < 100; $i++) {
             $newTrain = new Train();
             //tutte le colonne
-            $newTrain->azienda ='boolean';
+            $newTrain->azienda =$faker->word();
             $newTrain->Stazione_di_partenza =$faker->city();
             $newTrain->Stazione_di_arrivo =$faker->city();
             $newTrain->Orario_di_partenza =$faker->dateTimeInInterval('-1 week', '+3 days');
